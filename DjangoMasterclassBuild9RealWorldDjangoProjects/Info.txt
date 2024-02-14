@@ -1,0 +1,575 @@
+Info
+Django 3.2
+
+Info
+
+Commands:
+
+Course name :
+Django Masterclass : Build 9 Real World Django Projects
+
+URL Projects:
+http://localhost:8000/
+http://127.0.0.1:8000/
+
+URL GITHUB URL:
+https://github.com/Diegomca98?tab=repositories
+https://github.com/Diegomca98/foodcatalog/tree/main/foodcatalog
+https://github.com/Diegomca98/ecommerce-site
+
+Placeholder food image:
+https://livingstonbagel.com/wp-content/uploads/2016/11/food-placeholder.jpg
+
+Windows:
+
+- to install django: pip install django
+- check django version: py -m django --version
+- Create a django app :django-admin start project mysite
+- Start a django server: python manage.py runserver
+- Start a django server: python3 manage.py runserver
+- How to create a Django app: python3 manage.py startapp food
+- How to create a Django app: python manage.py startapp food
+
+*Project 1 Food App
+----------------------
+
+-python manage.py migrate
+
+-python manage.py makemigrations food
+-python manage.py sqlmigrate food 0001
+-python manage.py migrate
+
+-python manage.py shell
+
+from food.models import Item
+Item.objects.all()
+a = Item(item_name="Pizza",item_desc="Chessy Pizza",item_price=20)
+a.save()
+a.id = get id
+a.pk = get id
+b = Item(item_name="Burger",item_desc="Chessy Burger",item_price=10)
+a.id = get id
+a.pk = get id
+Item.objects.all()
+
+-Django Admin Panel & Creating Super Use:
+
+url: http://127.0.0.1:8000/admin/
+
+note: you need to create the superuser before in order to access to the admin.
+
+-python3 manage.py createsuperuser
+-python manage.py createsuperuser
+
+super user:
+username:julian
+email:julianm08@gmail.com
+password:1234
+
+python manage.py runserver
+
+-How to retrieve data from a database:
+Queryset
+
+item.objects.all()
+
+-Reading Data From Database:
+
+python manage.py makemigrations food
+python manage.py sqlmigrate food 0002
+python manage.py migrate
+
+django-admin startapp users
+
+pip install pillow
+
+python manage.py makemigrations food
+python manage.py sqlmigrate food 0003
+python manage.py migrate
+
+python manage.py runserver
+
+*Project 2 REST APIs
+-----------------------
+
+pip install djangorestframework
+
+django-admin startproject mysite
+
+django-admin startapp movies
+
+python manage.py makemigrations
+python manage.py sqlmigrate movie 0001
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): julian
+Email address: julianm08@gmail.com
+Password: 1234
+
+python manage.py runserver
+
+*Project 3 E-commerce Site:
+--------------------------------
+next video 90
+
+image url :
+https://www.google.com/search?q=Clock+Wrist+watch+time+720x720&tbm=isch&ved=2ahUKEwjkgLX_jquCAxVANlkFHdKTDWMQ2-cCegQIABAA&oq=Clock+Wrist+watch+time+720x720&gs_lcp=CgNpbWcQAzoECCMQJzoGCAAQBxAeOgUIABCABDoHCAAQigUQQ1DnCFiMUWDGUmgKcAB4AIABmgGIAcEekgEEMC4yOJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=l6BGZaTZFMDs5NoP0qe2mAY&bih=1284&biw=2543&hl=en#imgrc=zwbvwZguO_OCGM
+
+image url:
+https://cdn.pixabay.com/photo/2018/01/21/06/13/laptop-3095916_960_720.png
+
+image url:
+https://storage.needpix.com/rsynced_images/bike-2525183_1280.png
+
+image url:
+https://e7.pngegg.com/pngimages/75/86/png-clipart-hd-black-mountain-bike-hd-bike-mountain-bike.png
+
+image url:
+https://w7.pngwing.com/pngs/98/652/png-transparent-laptop-backpack-bag-laptop-bag-electronics-luggage-bags-computer.png
+
+test url :
+https://m.media-amazon.com/images/I/71twibtzb+L._AC_UF1000,1000_QL80_.jpg
+
+test url :
+https://s3-apw.badencloud.store/49882-cdn/d6ef77d2-a35b-4418-b3d0-f918224a7e9d_0_1687888490.jpg
+
+
+virtualenv ecomenv
+
+pip install django
+
+django-admin startproject ecomsite
+
+django-admin startapp shop
+
+python manage.py migrate
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+localStorage.clear() --- Chrome console
+
+python manage.py runserver
+
+source vvv/bin/activate
+source ecomenv/bin/activate
+source env/bin/activate
+
+*Project 4 Building a Web Base CV Generator:
+--------------------------------
+
+virtualenv env
+cd env
+
+Linus Ubuntu:
+source bin/activate
+source env/bin/activate
+
+Windows:
+source env/Scripts/activate
+
+pip install django
+django-admin startproject mysite
+django-admin startapp pdf
+
+python manage.py runserver
+
+
+env\Scripts\activate
+
+python manage.py makemigrations
+
+python manage.py migrate 
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+Downloading Packages for MAC Users:
+pip install pdfkit
+brew install Caskroom/cask/wkhtmltopdf
+pip install Caskroom/cask/wkhtmltopdf
+
+sudo apt-get install wkhtmltopdf
+
+Python:
+-pip install wkhtmltopdf
+python-pdfkit:
+https://zoomadmin.com/HowToInstall/UbuntuPackage/python-pdfkit
+
+sudo apt-get update -y
+
+*Project 5 Project5BuildingAWebBaseSiteScraper:
+--------------------------------
+virtualenv env
+cd env
+source bin/activate
+
+pip install django
+
+django-admin startproject mysite
+
+django-admin startapp myapp
+
+pip install requests 
+
+pip install beautifulsoup4
+
+python manage.py runserver
+
+env\Scripts\activate
+source env/bin/activate
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py runserver
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): julianm08@gmail.com
+Email address: julianm08@gmail.com
+Password: 1234
+
+*Project6BuildingAMacroNutrient&CalorieTrackerUsingDjango&ChartJS - Not working
+---------------------------------------------------------------------
+next class: 144
+
+virtualenv env
+cd env
+source bin/activate
+
+source env/bin/activate
+
+
+pip install django==3.2.15
+pip install django
+
+django-admin startproject mysite
+
+venv/Scripts/activate
+env/Scripts/activate
+
+Windows:
+source env/scripts/activate
+
+cd mysite 
+
+django-admin startapp myapp
+
+pip install django
+pip install django==3.2.15
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+python manage.py runserver
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py runserver
+
+*Project7BuildinSocialMediaApp
+------------------------------
+
+Project URLS: 
+http://127.0.0.1:8000/users/login/
+
+http://127.0.0.1:8000/users/password_change/
+http://127.0.0.1:8000/users/password_change/done/
+http://127.0.0.1:8000/users/password_reset/
+
+http://127.0.0.1:8000/posts/feed
+http://127.0.0.1:8000/admin
+
+password_reset_confirm
+
+password_reset_complete
+
+http://127.0.0.1:8000/users/reset/MQ/byxsz8-8bad799625a7885cdedf16288f376f24
+
+
+How to install Django with a specific version:
+https://medium.com/djangotube/how-to-install-django-with-a-specific-version-9897c8b9ad7e
+
+
+virtualenv env
+
+Windows:
+source env/scripts/activate
+source env/scripts/desactive
+
+pip install django
+pip install django==3.2
+pip install django==3.2.15
+django version 3.2.15
+
+django-admin startproject socialproject
+
+django-admin startapp users
+
+python manage.py migrate
+
+python manage.py runserver
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+66yEQg*4sK$^n@
+
+password:
+newsuperuser
+newsuper12345
+
+pip install pillow
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py runserver
+
+other user:
+Username (leave blank to use 'julian'): pat
+Email address: pat@gmail.com
+Password: newsuper12345
+
+
+
+
+create new app post:
+django-admin startapp posts
+
+python manage.py collecstatic
+
+pip install django-mathfilters
+
+*Project8BuildAnAdvancedExpenseTracker
+---------------------------------------
+next video: 213
+URL:
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/edit/1/
+http://127.0.0.1:8000/delete/1/
+
+virtualenv env
+
+Windows:
+source env/scripts/activate
+source env/scripts/desactive
+
+pip install django
+pip install django==3.2
+pip install django==3.2.15
+django version 3.2.15
+
+
+django-admin startproject mysite
+
+django-admin startapp myapp
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+python manage.py runserver
+
+Setting Up Tailwind:
+
+you need Node JS installed:
+
+npm init -y
+npm install tailwindcss@2.2.19
+npm run build
+npm run build -p 
+
+
+Charts JS 3.0.2
+https://www.chartjs.org/docs/3.0.2/
+https://www.jsdelivr.com/package/npm/chart.js
+
+*Project9BuildingARealTimeChatApplicationUsingDjangoChannels
+------------------------------------------------------------
+
+URL :
+http://127.0.0.1:8000/rooms
+
+virtualenv env
+
+Windows:
+source env/scripts/activate
+source env/scripts/desactive
+MAC:
+source env/bin/activate
+
+pip install django==3.2.15
+
+django-admin startproject mysite
+cd mysite
+python manage.py startapp chatapp
+
+pip install channels==3.0.4
+
+python manage.py runserver
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+*Project9BuildingAMulti VendorDigitalMarketplace:
+--------------------------------------------------
+
+URL :
+http://127.0.0.1:8000/product/1
+http://127.0.0.1:8000/product/2
+
+virtualenv env
+
+Windows:
+source env/scripts/activate
+source env/scripts/desactive
+MAC:
+source env/bin/activate
+
+pip install django==3.2.15
+
+django-admin startproject mysite
+cd mysite
+django-admin startapp myapp
+
+pip install channels==3.0.4
+
+python manage.py runserver
+
+how to install Tailwind CSS easiest method:
+
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'julian'): admin
+Email address: julianm08@gmail.com
+Password: 1234
+
+Search on google :
+no product placeholder image
+link:
+https://www.google.com/search?q=no+product+placeholder+image&tbm=isch&ved=2ahUKEwjEtbXSrreDAxUUtYQIHa31AzsQ2-cCegQIABAA&oq=no+product+placeholder+image&gs_lcp=CgNpbWcQAzoECCMQJzoFCAAQgAQ6BggAEAgQHjoGCAAQBRAeUJsHWNE9YMI-aABwAHgAgAHZAYgBjB-SAQYwLjI2LjOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=QiiQZcSMEZTqkvQPreuP2AM&bih=774&biw=1464&hl=en
+
+
+---MAC commands:
+Mac
+sudo pip3 install virtualenv
+source env/bin/activate
+pip3 install Pillow
+sudo pip3 install virtualenv
+django-admin --version
+
+steps macOS & Windows:
+virtualenv env
+pip install django==3.2.15
+pip install pillow
+pip install django-mathfilters
+
+Modify the Template Django:
+https://www.w3schools.com/django/django_add_css_file.php
+
+ImportError: Couldn’t import Django:
+https://itecnote.com/tecnote/go-importerror-couldnt-import-django/
+
+SystemCheckError django Cannot use Imagefield because Pillow is not installed:
+https://www.youtube.com/watch?v=9MrfFYv6TOE&ab_channel=Infinetsoftsolutions
+
+
+
+
+
+
+
+
+Tailwind for Django Project:
+
+npm init -y
+npm install tailwindcss@2.2.16
+npm run build
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docs:
+
+*No module named django but it is installed:
+https://stackoverflow.com/questions/35184458/no-module-named-django-but-it-is-installed
+
+solution:
+python -m pip install django
+
+
+
+
+
+
+
+------------------------------------------------
+
+-Windows:
+env\Scripts\activate
+ecomenv\Scripts\activate
+
+.\Scripts\activate
+
+
+
+
+
+
+
+-MAC:
+- install django: pip3 install django=2.2
+
